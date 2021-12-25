@@ -1,4 +1,4 @@
-//Import './../src/super-galactic.js';
+import Person from './../src/super-galactic.js';
 
 describe('Person', () => {
 
