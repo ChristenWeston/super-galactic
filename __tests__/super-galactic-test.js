@@ -4,6 +4,14 @@ describe('Person', () => {
 
   test('Should create a person with age as a parameter', () => {
     const newPerson = new Person(36);
-    expect(newPerson.age).toEqual(36);
+    expect(newPerson.earthAge).toEqual(36);
+  });
+});
+
+describe('Person.prototype.mercuryAge', () => {
+
+  test('Should return 150 if 36 is supplied as the earth age for the person', () => {
+    const newPerson = new Person(36);
+    expect(newPerson.mercuryAge()).toEqual(150);
   });
 });
