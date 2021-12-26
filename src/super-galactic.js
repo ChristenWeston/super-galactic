@@ -6,3 +6,7 @@ export default class Person {
   }
 }
 
+Person.prototype.mercuryAge = function() {
+  let mercuryAge1 = parseInt(this.earthAge) / .24;
+  return mercuryAge1;
+}
