@@ -35,13 +35,13 @@ Person.prototype.yearsLeftToLive = function() {
     return yearsLeftToLive1;
   }
 
-  else if (this.sex === "male") {
-    yearsLeftToLive1 = 76.2 - (parseInt(this.earthAge));
-    return yearsLeftToLive1;
-  }
+  //else if (this.sex === "male") {
+  //  yearsLeftToLive1 = 76.2 - (parseInt(this.earthAge));
+  //  return yearsLeftToLive1;
+ // }
 
-  else {
-    yearsLeftToLive1 = 78.7 - (parseInt(this.earthAge));
-    return yearsLeftToLive1;
-  }
+ // else {
+ //   yearsLeftToLive1 = 78.7 - (parseInt(this.earthAge));
+ //   return yearsLeftToLive1;
+ // }
 };
