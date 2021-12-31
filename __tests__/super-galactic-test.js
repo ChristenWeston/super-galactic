@@ -53,4 +53,9 @@ describe('Person.prototype.yearsLeftToLive', () => {
     const newPerson = new Person(36, "male");
     expect(newPerson.yearsLeftToLive()).toEqual(40.2);
   });
+
+  test('Should return 42.7 if 36 and "neither male nor female" are supplied for the earth age and sex for the person', () => {
+    const newPerson = new Person(36, "neither male nor female");
+    expect(newPerson.yearsLeftToLive()).toEqual(42.7);
+  });
 });
