@@ -32,7 +32,12 @@ Person.prototype.yearsLeftToLive = function() {
   let yearsLeftToLive1;
   if (this.sex === "female") {
     yearsLeftToLive1 = 81.2 - (parseInt(this.earthAge));
-    return yearsLeftToLive1;
+    if (Math.sign(yearsLeftToLive1) === -1) {
+     yearsLeftToLive1 = Math.floor(yearsLeftToLive1) * -1;
+     return (yearsLeftToLive1 + " years past life expectancy");
+    }
+    else {return yearsLeftToLive1;
+    }
   }
 
   else if (this.sex === "male") {
