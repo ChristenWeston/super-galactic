@@ -40,8 +40,8 @@ Person.prototype.yearsLeftToLive = function() {
     return yearsLeftToLive1;
   }
 
- // else {
- //   yearsLeftToLive1 = 78.7 - (parseInt(this.earthAge));
- //   return yearsLeftToLive1;
- // }
+  else {
+    yearsLeftToLive1 = 78.7 - (parseInt(this.earthAge));
+    return yearsLeftToLive1;
+  }
 };
