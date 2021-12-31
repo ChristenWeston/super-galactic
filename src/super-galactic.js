@@ -1,8 +1,9 @@
 import { contains } from "jquery";
 
 export default class Person {
-  constructor(earthAge) {
+  constructor(earthAge, sex) {
     this.earthAge = earthAge;
+    this.sex = sex;
   }
 }
 

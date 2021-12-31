@@ -39,3 +39,13 @@ describe('Person.prototype.jupiterAge', () => {
     expect(newPerson.jupiterAge()).toEqual(3);
   });
 });
+
+//Life expectancy female 81.2 male 76.2 both 78.7
+
+describe('Person.prototype.yearsLeftToLive', () => {
+
+  test('Should return 45.2 if 36 and female are supplied for the earth age and sex for the person', () => {
+    const newPerson = new Person(36, female);
+    expect(newPerson.yearsLeftToLive()).toEqual(45.2);
+  });
+});
