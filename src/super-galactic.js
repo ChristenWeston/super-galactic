@@ -20,3 +20,8 @@ Person.prototype.marsAge = function() {
   let marsAge1 = Math.floor(parseInt(this.earthAge) / 1.88);
   return marsAge1;
 };
+
+Person.prototype.jupiterAge = function() {
+  let jupiterAge1 = Math.floor(parseInt(this.earthAge) / 11.86);
+  return jupiterAge1;
+};
