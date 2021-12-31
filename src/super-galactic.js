@@ -36,14 +36,20 @@ Person.prototype.yearsLeftToLive = function() {
      yearsLeftToLive1 = Math.floor(yearsLeftToLive1) * -1;
      return (yearsLeftToLive1 + " years past life expectancy");
     }
-    else {
+    else { 
       return yearsLeftToLive1;
     }
   }
 
   else if (this.sex === "male") {
     yearsLeftToLive1 = 76.2 - (parseInt(this.earthAge));
-    return yearsLeftToLive1;
+    if (Math.sign(yearsLeftToLive1) === -1) {
+      yearsLeftToLive1 = Math.floor(yearsLeftToLive1) * -1;
+      return (yearsLeftToLive1 + " years past life expectancy");
+    }
+    else {
+      return yearsLeftToLive1;
+    }
   }
 
   else {
