@@ -26,3 +26,22 @@ Person.prototype.jupiterAge = function() {
   let jupiterAge1 = Math.floor(parseInt(this.earthAge) / 11.86);
   return jupiterAge1;
 };
+
+//Life expectancy female 81.2 male 76.2 both 78.7
+Person.prototype.yearsLeftToLive = function() {
+  let yearsLeftToLive1;
+  if (this.sex === "female") {
+    yearsLeftToLive1 = 81.2 - (parseInt(this.earthAge));
+    return yearsLeftToLive1;
+  }
+
+  else if (this.sex === "male") {
+    yearsLeftToLive1 = 76.2 - (parseInt(this.earthAge));
+    return yearsLeftToLive1;
+  }
+
+  else {
+    yearsLeftToLive1 = 78.7 - (parseInt(this.earthAge));
+    return yearsLeftToLive1;
+  }
+};

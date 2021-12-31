@@ -45,7 +45,7 @@ describe('Person.prototype.jupiterAge', () => {
 describe('Person.prototype.yearsLeftToLive', () => {
 
   test('Should return 45.2 if 36 and female are supplied for the earth age and sex for the person', () => {
-    const newPerson = new Person(36, female);
+    const newPerson = new Person(36, "female");
     expect(newPerson.yearsLeftToLive()).toEqual(45.2);
   });
 });
