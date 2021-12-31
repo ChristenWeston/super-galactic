@@ -24,11 +24,18 @@ describe('Person.prototype.venusAge', () => {
   });
 });
 
-// Mars years. (A Mars year is 1.88 Earth years.)
 describe('Person.prototype.marsAge', () => {
 
   test('Should return 19 if 36 is supplied as the earth age for the person', () => {
     const newPerson = new Person(36);
     expect(newPerson.marsAge()).toEqual(19);
+  });
+});
+
+describe('Person.prototype.jupiterAge', () => {
+
+  test('Should return 3 if 36 is supplied as the earth age for the person', () => {
+    const newPerson = new Person(36);
+    expect(newPerson.jupiterAge()).toEqual(3);
   });
 });
