@@ -36,7 +36,8 @@ Person.prototype.yearsLeftToLive = function() {
      yearsLeftToLive1 = Math.floor(yearsLeftToLive1) * -1;
      return (yearsLeftToLive1 + " years past life expectancy");
     }
-    else {return yearsLeftToLive1;
+    else {
+      return yearsLeftToLive1;
     }
   }
 

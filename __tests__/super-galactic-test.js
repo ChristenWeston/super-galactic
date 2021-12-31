@@ -63,4 +63,9 @@ describe('Person.prototype.yearsLeftToLive', () => {
     const newPerson = new Person(91, "female");
     expect(newPerson.yearsLeftToLive()).toEqual("10 years past life expectancy");
   });
+
+  test('Should return "10 years past life expectancy" if 86 and male is supplied as the earth age and sex for the person', () => {
+    const newPerson = new Person(86, "male");
+    expect(newPerson.yearsLeftToLive()).toEqual("10 years past life expectancy");
+  });
 });
