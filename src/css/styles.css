@@ -43,3 +43,18 @@ body {
   color: rgb(255, 255, 255);
   background-color: rgb(88, 57, 172); 
 }
+
+.galactic-results{
+  display: none;
+  font-size: 30px;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0);
+  min-width: 0;
+  word-wrap: break-word;
+  background-clip: border-box;
+  border-radius: 0.45rem;
+  margin: 100px;
+  padding: 2px;
+  border: 2px solid rgba(238, 225, 225, 0.125);
+  height: 250px;
+}
