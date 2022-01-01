@@ -1,0 +1,9 @@
+body {
+  background-image: url("../img/galaxy.jpg");
+  background-size:cover;
+  background-color: black;
+  background-repeat: no-repeat;
+  text-align: center;
+  color: rgb(242, 242, 250);
+  background-position: center;
+}
