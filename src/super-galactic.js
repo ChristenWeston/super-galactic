@@ -27,7 +27,7 @@ Person.prototype.jupiterAge = function() {
   return jupiterAge1;
 };
 
-//Life expectancy female 81.2 male 76.2 both 78.7
+
 Person.prototype.yearsLeftToLive = function() {
   let yearsLeftToLive1;
   if (this.sex === "female") {
