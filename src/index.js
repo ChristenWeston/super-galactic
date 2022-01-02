@@ -7,12 +7,22 @@ import Person from './super-galactic.js';
 $(document).ready(function() {
   $("form#galactic-form").submit(function(event) {
     event.preventDefault();
-    let earthAge = $("select#earth-age").val();
+    let earthAge = parseInt($("#earth-age").val());
     let sex = $("select#sex").val();
 
     let newPerson = new Person(earthAge, sex);
+    let mercuryAge = newPerson.mercuryAge();
+    let venusAge = newPerson.venusAge();
+    let marsAge = newPerson.marsAge();
+    let jupiterAge = newPerson.jupiterAge();
+    let yearsLeft = newPerson.yearsLeftToLive();
 
+    $(".mercury-age").html(mercuryAge);
+    $(".venus-age").html(venusAge);
+    $(".mars-age").html(marsAge);
+    $(".jupiter-age").html(jupiterAge);
+    $(".years-left").html(yearsLeft);
     $(".galactic-quiz").hide();
     $(".galactic-results").show();
-  })
-})
+  });
+});

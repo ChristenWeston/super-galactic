@@ -1,4 +1,4 @@
-import { contains } from "jquery";
+//import { contains } from "jquery";
 
 export default class Person {
   constructor(earthAge, sex) {
