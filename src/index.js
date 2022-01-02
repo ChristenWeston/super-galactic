@@ -4,6 +4,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './css/styles.css';
 import Person from './super-galactic.js';
 
+
 $(document).ready(function() {
   $("form#galactic-form").submit(function(event) {
     event.preventDefault();
@@ -15,7 +16,7 @@ $(document).ready(function() {
     let venusAge = newPerson.venusAge();
     let marsAge = newPerson.marsAge();
     let jupiterAge = newPerson.jupiterAge();
-    let yearsLeft = newPerson.yearsLeftToLive();
+    let yearsLeft = parseInt(newPerson.yearsLeftToLive());
 
     $(".mercury-age").html(mercuryAge);
     $(".venus-age").html(venusAge);

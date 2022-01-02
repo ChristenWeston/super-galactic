@@ -4,6 +4,7 @@ export default class Person {
   constructor(earthAge, sex) {
     this.earthAge = earthAge;
     this.sex = sex;
+   // this.pastLifeExpectancy = "";
   }
 }
 
@@ -33,10 +34,12 @@ Person.prototype.yearsLeftToLive = function() {
   if (this.sex === "female") {
     yearsLeftToLive1 = 81.2 - (parseInt(this.earthAge));
     if (Math.sign(yearsLeftToLive1) === -1) {
-     yearsLeftToLive1 = Math.floor(yearsLeftToLive1) * -1;
-     return (yearsLeftToLive1 + " years past life expectancy");
+  //    this.pastLifeExpectancy = true;
+      yearsLeftToLive1 = Math.floor(yearsLeftToLive1) * -1;
+      return (yearsLeftToLive1 + " years past life expectancy");
     }
     else { 
+    //  this.pastLifeExpectancy = false;
       return yearsLeftToLive1;
     }
   }
@@ -44,10 +47,12 @@ Person.prototype.yearsLeftToLive = function() {
   else if (this.sex === "male") {
     yearsLeftToLive1 = 76.2 - (parseInt(this.earthAge));
     if (Math.sign(yearsLeftToLive1) === -1) {
+    //  this.pastLifeExpectancy = true;
       yearsLeftToLive1 = Math.floor(yearsLeftToLive1) * -1;
       return (yearsLeftToLive1 + " years past life expectancy");
     }
     else {
+    //  this.pastLifeExpectancy = false;
       return yearsLeftToLive1;
     }
   }
@@ -55,10 +60,12 @@ Person.prototype.yearsLeftToLive = function() {
   else {
     yearsLeftToLive1 = 78.7 - (parseInt(this.earthAge));
     if (Math.sign(yearsLeftToLive1) === -1) {
+   //   this.pastLifeExpectancy = true;
       yearsLeftToLive1 = Math.floor(yearsLeftToLive1) * -1;
       return (yearsLeftToLive1 + " years past life expectancy");
     }
     else {
+    //  this.pastLifeExpectancy = false;
       return yearsLeftToLive1;
     }
   }

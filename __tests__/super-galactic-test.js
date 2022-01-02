@@ -6,6 +6,13 @@ describe('Person', () => {
     const newPerson = new Person(36);
     expect(newPerson.earthAge).toEqual(36);
   });
+
+  test('Should create a person with age, sex, and pastLifeExpectancy as a parameter', () => {
+    const newPerson = new Person(36, "female");
+    expect(newPerson.earthAge).toEqual(36);
+    expect(newPerson.sex).toEqual("female");
+    expect(newPerson.pastLifeExpectancy).toEqual("");
+  });
 });
 
 describe('Person.prototype.mercuryAge', () => {
