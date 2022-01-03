@@ -47,7 +47,7 @@ Person.prototype.yearsLeftToLive = function() {
   else if (this.sex === "male") {
     yearsLeftToLive1 = 76.2 - (parseInt(this.earthAge));
     if (Math.sign(yearsLeftToLive1) === -1) {
-    //  this.pastLifeExpectancy = true;
+      this.pastLifeExpectancy = true;
       yearsLeftToLive1 = Math.floor(yearsLeftToLive1) * -1;
       return (yearsLeftToLive1 + " years past life expectancy");
     }
