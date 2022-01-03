@@ -52,7 +52,7 @@ Person.prototype.yearsLeftToLive = function() {
       return (yearsLeftToLive1 + " years past life expectancy");
     }
     else {
-    //  this.pastLifeExpectancy = false;
+      this.pastLifeExpectancy = false;
       return yearsLeftToLive1;
     }
   }
