@@ -36,7 +36,7 @@ Person.prototype.yearsLeftToLive = function() {
     if (Math.sign(yearsLeftToLive1) === -1) {
       this.pastLifeExpectancy = true;
       yearsLeftToLive1 = Math.floor(yearsLeftToLive1) * -1;
-      return (yearsLeftToLive1 + " years past life expectancy");
+      return (yearsLeftToLive1);
     }
     else { 
       this.pastLifeExpectancy = false;
@@ -49,7 +49,7 @@ Person.prototype.yearsLeftToLive = function() {
     if (Math.sign(yearsLeftToLive1) === -1) {
       this.pastLifeExpectancy = true;
       yearsLeftToLive1 = Math.floor(yearsLeftToLive1) * -1;
-      return (yearsLeftToLive1 + " years past life expectancy");
+      return (yearsLeftToLive1);
     }
     else {
       this.pastLifeExpectancy = false;
@@ -62,7 +62,7 @@ Person.prototype.yearsLeftToLive = function() {
     if (Math.sign(yearsLeftToLive1) === -1) {
       this.pastLifeExpectancy = true;
       yearsLeftToLive1 = Math.floor(yearsLeftToLive1) * -1;
-      return (yearsLeftToLive1 + " years past life expectancy");
+      return (yearsLeftToLive1);
     }
     else {
       this.pastLifeExpectancy = false;
