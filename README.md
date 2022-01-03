@@ -5,8 +5,6 @@
 
 #### This page calculates your age on Mercury, Venus, Mars and Jupiter! It will also let you know how many years you have left to live!
 
-[GitHub pages site](https://christenweston.github.io/super-galactic/)
-
 ## Technologies Used
 
 * Git
@@ -19,8 +17,9 @@
 ## Setup Installation Requirements
 
 1. Clone the Portfolio repository
-2. Open the index file in your browser
-3. Enjoy!
+2. Open in your favorite IDE
+3. Run npm run build
+4. Enjoy!
 
 # Known Bugs
 * None known
