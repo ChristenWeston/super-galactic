@@ -82,5 +82,6 @@ describe('Person.prototype.yearsLeftToLive', () => {
   test('Should return "10 years past life expectancy" if 88 and "non-binary" is supplied as the earth age and sex for the person', () => {
     const newPerson = new Person(88, "non-binary");
     expect(newPerson.yearsLeftToLive()).toEqual("10 years past life expectancy");
+    expect(newPerson.pastLifeExpectancy).toEqual(true);
   });
 });
