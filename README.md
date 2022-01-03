@@ -1,6 +1,7 @@
 # Super Galactic
 
 #### Created by Christen Weston
+##### Glow styling made possible with the help of W3 schools
 
 #### This page calculates your age on Mercury, Venus, Mars and Jupiter! It will also let you know how many years you have left to live!
 
