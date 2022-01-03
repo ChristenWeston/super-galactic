@@ -28,7 +28,6 @@ Person.prototype.jupiterAge = function() {
   return jupiterAge1;
 };
 
-
 Person.prototype.yearsLeftToLive = function() {
   let yearsLeftToLive1;
   if (this.sex === "female") {
