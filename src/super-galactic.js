@@ -60,7 +60,7 @@ Person.prototype.yearsLeftToLive = function() {
   else {
     yearsLeftToLive1 = 78.7 - (parseInt(this.earthAge));
     if (Math.sign(yearsLeftToLive1) === -1) {
-   //   this.pastLifeExpectancy = true;
+      this.pastLifeExpectancy = true;
       yearsLeftToLive1 = Math.floor(yearsLeftToLive1) * -1;
       return (yearsLeftToLive1 + " years past life expectancy");
     }
