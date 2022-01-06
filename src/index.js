@@ -11,7 +11,7 @@ Person.prototype.displayLifeExpectancy = function() {
   else if (this.pastLifeExpectancy === false) {
     $(".years-left").show();
   }
-}
+};
 
 $(document).ready(function() {
   $("form#galactic-form").submit(function(event) {

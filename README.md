@@ -13,13 +13,17 @@
 * JQuery
 * Jest
 * NPM
+* Webpack
 
 ## Setup Installation Requirements
 
 1. Clone the Portfolio repository
 2. Open in your favorite IDE
-3. Run npm run build
-4. Enjoy!
+3. Run 'npm install' (at the root level of the project)
+4. Run 'npm run build'
+5. Run 'npm run start' to see the project
+6. Run 'npm test' to test using jest
+7. Enjoy!
 
 # Known Bugs
 * None known
