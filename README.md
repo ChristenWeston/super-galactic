@@ -20,9 +20,9 @@
 1. Clone the Portfolio repository
 2. Open in your favorite IDE
 3. Run 'npm install' (at the root level of the project)
-4. Run 'npm run build'
-5. Run 'npm run start' to see the project
-6. Run 'npm test' to test using jest
+4. Run 'npm run build' (at the root level of the project)
+5. Run 'npm run start' to see the project (at the root level of the project)
+6. Run 'npm test' to test using jest (at the root level of the project)
 7. Enjoy!
 
 # Known Bugs
